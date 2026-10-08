@@ -1,0 +1,936 @@
+{
+  "name": "ITC Immunity Therapy Center - Grounded Knowledge Chatbot",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [
+                1
+              ],
+              "triggerAtHour": 3
+            }
+          ]
+        }
+      },
+      "id": "5ab649db-01e1-40a7-b167-6655627ccf23",
+      "name": "Weekly Refresh",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "ITC-Knowledge-Bot/1.0 (n8n; PlacidWay assessment crawler; 1 req/sec)"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        }
+      },
+      "id": "9fe785e7-b4f6-40a1-907c-2d68517aca6c",
+      "name": "Fetch Clinic Profile",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        272,
+        224
+      ],
+      "executeOnce": true,
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {},
+      "id": "d6369040-dcad-4a9a-90a5-0d7726f4b76b",
+      "name": "Refresh Now",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.placidway.com/package/7903/Alternative-Adenocarcinoma-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "ITC-Knowledge-Bot/1.0 (n8n; PlacidWay assessment crawler; 1 req/sec)"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        }
+      },
+      "id": "055edb4b-f779-45a5-a721-ccbaa414f7aa",
+      "name": "Fetch Adenocarcinoma Package",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        496,
+        224
+      ],
+      "executeOnce": true,
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "url": "https://www.placidway.com/package/7902/Alternative-Adrenal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "ITC-Knowledge-Bot/1.0 (n8n; PlacidWay assessment crawler; 1 req/sec)"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        }
+      },
+      "id": "719eb694-5dee-4e91-a918-51c42ca8b0d6",
+      "name": "Fetch Adrenal Package",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        720,
+        224
+      ],
+      "executeOnce": true,
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "url": "https://www.placidway.com/package/7901/Alternative-Anal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "ITC-Knowledge-Bot/1.0 (n8n; PlacidWay assessment crawler; 1 req/sec)"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        }
+      },
+      "id": "692d35ea-45de-4acc-b483-fe3d04755bfc",
+      "name": "Fetch Anal Package",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        944,
+        224
+      ],
+      "executeOnce": true,
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "url": "https://www.placidway.com/profile-videos/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "ITC-Knowledge-Bot/1.0 (n8n; PlacidWay assessment crawler; 1 req/sec)"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        }
+      },
+      "id": "c5b3e940-e92c-4b5f-8258-686a5f14fdad",
+      "name": "Fetch Clinic Videos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        1168,
+        224
+      ],
+      "executeOnce": true,
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "url": "https://www.placidway.com/price-list/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "ITC-Knowledge-Bot/1.0 (n8n; PlacidWay assessment crawler; 1 req/sec)"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        }
+      },
+      "id": "562c55f2-bb33-4593-a10b-3c698f9bf3b3",
+      "name": "Fetch Price List",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        1392,
+        224
+      ],
+      "executeOnce": true,
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "url": "https://www.placidway.com/search-medical-pricings/Alternative-Medicine/All/1",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "ITC-Knowledge-Bot/1.0 (n8n; PlacidWay assessment crawler; 1 req/sec)"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        }
+      },
+      "id": "e674adab-2e78-469d-8da2-f0f966b2ffa3",
+      "name": "Fetch Price Comparison 2026",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        1616,
+        224
+      ],
+      "executeOnce": true,
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst pages = [\n  { node: 'Fetch Clinic Profile', key: 'clinic_profile', title: 'ITC Immunity Therapy Center - Clinic Profile', url: 'https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center' },\n  { node: 'Fetch Adenocarcinoma Package', key: 'adenocarcinoma_package', title: 'Alternative Adenocarcinoma Cancer Treatment Package in Tijuana', url: 'https://www.placidway.com/package/7903/Alternative-Adenocarcinoma-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC' },\n  { node: 'Fetch Adrenal Package', key: 'adrenal_package', title: 'Alternative Adrenal Cancer Treatment Package in Tijuana', url: 'https://www.placidway.com/package/7902/Alternative-Adrenal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC' },\n  { node: 'Fetch Anal Package', key: 'anal_package', title: 'Alternative Anal Cancer Treatment Package in Tijuana', url: 'https://www.placidway.com/package/7901/Alternative-Anal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC' },\n  { node: 'Fetch Clinic Videos', key: 'clinic_videos', title: 'ITC Tijuana Videos - Alternative Cancer Treatment', url: 'https://www.placidway.com/profile-videos/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center' },\n  { node: 'Fetch Price List', key: 'price_list', title: 'ITC Immunity Therapy Center - Price List', url: 'https://www.placidway.com/price-list/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center' },\n  { node: 'Fetch Price Comparison 2026', key: 'price_comparison_2026', title: 'Alternative Medicine Cost Abroad - Compare Prices 2026', url: 'https://www.placidway.com/search-medical-pricings/Alternative-Medicine/All/1' },\n];\n\nconst MAX_CHARS = 20000;\nconst entities = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '\"', '&#39;': \"'\", '&#x27;': \"'\", '&nbsp;': ' ', '&ndash;': '-', '&mdash;': '-', '&rsquo;': \"'\", '&lsquo;': \"'\", '&rdquo;': '\"', '&ldquo;': '\"' };\n\nfunction htmlToText(html) {\n  if (!html || typeof html !== 'string') return '';\n  const main = html.match(/<main[\\s\\S]*?<\\/main>/i);\n  let s = main ? main[0] : html;\n  s = s.replace(/<(script|style|noscript|svg|iframe|form|select)[\\s\\S]*?<\\/\\1>/gi, ' ');\n  s = s.replace(/<!--|-->/g, ' ');\n  s = s.replace(/<\\/(td|th)>/gi, ' | ');\n  s = s.replace(/<\\/(tr|p|div|li|h[1-6]|br)>|<br\\s*\\/?>/gi, '\\n');\n  s = s.replace(/<li[^>]*>/gi, '- ');\n  s = s.replace(/<[^>]+>/g, ' ');\n  s = s.replace(/&[#a-z0-9]+;/gi, (e) => entities[e] !== undefined ? entities[e] : ' ');\n  s = s.replace(/[{}]/g, ' ');\n  s = s.replace(/[ \\t]+/g, ' ').replace(/\\s*\\n\\s*/g, '\\n').replace(/\\n{2,}/g, '\\n').trim();\n  s = s.replace(/Request a video call[\\s\\S]*?Confirm Consultation/i, ' ').replace(/^.*\\(Pacific\\/Midway\\).*$/gm, ' ').trim();\n  return s.slice(0, MAX_CHARS);\n}\n\nconst refreshedAt = new Date().toISOString();\nconst out = [];\nfor (const p of pages) {\n  let html = '';\n  try { html = $(p.node).first().json.data; } catch (e) { html = ''; }\n  const content = htmlToText(html);\n  out.push({ json: { source_key: p.key, page_title: p.title, source_url: p.url, content: content || 'PAGE COULD NOT BE FETCHED ON LAST REFRESH', char_count: content.length, refreshed_at: refreshedAt } });\n}\nreturn out;\n"
+      },
+      "id": "3d0d4686-0793-4df7-b94f-f3a0964d906c",
+      "name": "Extract Clean Page Text",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        800,
+        224
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "yZACemqEzUPNGgE9",
+          "cachedResultName": "itc_knowledge_base"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "source_key",
+              "keyValue": "={{ $json.source_key }}"
+            }
+          ]
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "source_key": "={{ $json.source_key }}",
+            "page_title": "={{ $json.page_title }}",
+            "source_url": "={{ $json.source_url }}",
+            "content": "={{ $json.content }}",
+            "char_count": "={{ $json.char_count }}",
+            "refreshed_at": "={{ $json.refreshed_at }}"
+          },
+          "schema": [
+            {
+              "id": "source_key",
+              "displayName": "source_key",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "page_title",
+              "displayName": "page_title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "source_url",
+              "displayName": "source_url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "content",
+              "displayName": "content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "char_count",
+              "displayName": "char_count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "refreshed_at",
+              "displayName": "refreshed_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "1f10574e-234a-4cc0-b80f-c148f964e253",
+      "name": "Save Knowledge Base",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        1024,
+        224
+      ]
+    },
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "Hi! I answer questions about ITC Immunity Therapy Center (Tijuana, Mexico) using PlacidWay pages only.\nAsk me about packages, prices, what is included, or the clinic.",
+        "options": {
+          "inputPlaceholder": "Ask about ITC packages, prices or the clinic...",
+          "subtitle": "Answers grounded only in PlacidWay pages, with sources",
+          "title": "ITC Immunity Therapy Center Assistant",
+          "responseMode": "streaming"
+        }
+      },
+      "id": "10eb5ce9-5074-49bd-be43-ff881d8a9549",
+      "name": "When chat message received",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        0,
+        528
+      ],
+      "webhookId": "28ffea43-221b-4cb9-bd9b-1e9565bee612"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "yZACemqEzUPNGgE9",
+          "cachedResultName": "itc_knowledge_base"
+        },
+        "returnAll": true
+      },
+      "id": "d0ffb677-3b10-4679-bc65-735bb0e9887f",
+      "name": "Load Knowledge Base",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        224,
+        528
+      ],
+      "executeOnce": true,
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "kb",
+              "name": "knowledge_base",
+              "type": "string",
+              "value": "={{ $input.all().filter(i => i.json.content).map(i => \"### SOURCE: \" + i.json.page_title + \"\\nSource URL: \" + i.json.source_url + \"\\nLast refreshed: \" + i.json.refreshed_at + \"\\n\" + i.json.content).join(\"\\n\\n==========\\n\\n\") }}"
+            },
+            {
+              "id": "pages",
+              "name": "page_count",
+              "type": "number",
+              "value": "={{ $input.all().filter(i => i.json.content).length }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "067375cb-7cbf-4d51-9f24-485884654fc6",
+      "name": "Build Knowledge Base Variable",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        448,
+        528
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('When chat message received').item.json.chatInput }}",
+        "options": {
+          "systemMessage": "=You are the PlacidWay knowledge assistant for ITC Immunity Therapy Center (Tijuana, Mexico).\n\nKNOWLEDGE BASE\nThe ONLY facts you may use are in the KNOWLEDGE BASE below. It contains text scraped from exactly 7 PlacidWay pages. Each page starts with \"### SOURCE:\" followed by its \"Source URL:\". You have no other knowledge. Never use general knowledge, training data, or guesses about prices, clinics, doctors, durations, success rates or medical facts.\n\nRULES (follow all of them on every answer)\n1. Grounding: Answer ONLY with facts written in the KNOWLEDGE BASE. If a fact is not written there, you do not know it.\n2. Citation: End EVERY answer with a line \"Source:\" followed by the exact Source URL(s) of the page(s) you used. Never invent or shorten a URL.\n3. Prices: Quote prices exactly as written on the pages, always with the currency (USD) and the context the page gives (program type, duration, \"starting from\", what the package includes). The package pages list an Out-Patient Program (3 weeks) and an In-Patient Program (3 weeks) - always state both with the exact USD figures copied from the KNOWLEDGE BASE and say which page they came from. Optional procedures and excluded costs listed on the package pages must be mentioned as extra costs when relevant. If a page has no price for what was asked, say the price is not listed and suggest requesting a free quote.\n4. Honest fallback: If the answer is not in the KNOWLEDGE BASE, reply exactly: \"I don't have this information on the provided PlacidWay pages. Please request a free quote: https://www.placidway.com/rfi/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center\" - do not guess or add facts.\n5. Actions you cannot do: You cannot book appointments, check availability, take payments or contact the clinic. Say so and point to the free quote / contact form: https://www.placidway.com/rfi/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center\n6. Out of scope: Politely decline anything unrelated to ITC Immunity Therapy Center or the 7 pages (e.g. weather, news, coding, other clinics not on the pages). Say you can only help with ITC information from the PlacidWay pages.\n7. No medical advice: Never diagnose, never say whether a treatment is safe or suitable for a specific person or condition (e.g. diabetes, pregnancy, a specific stage). Explain that eligibility is decided by the clinic's physicians after a medical review, recommend speaking with their own doctor/oncologist, and share only what the pages say about eligibility or risks, with the source.\n8. Wrong premises / trick prices: If the user states a price or fact that contradicts the pages (e.g. \"I heard it costs $50\"), do NOT agree. Politely correct it with the real figure from the pages - use the Price List page for per-cancer-type prices and the package pages for Out-Patient/In-Patient program prices - and cite the source.\n9. Comparisons: Only compare countries, clinics or prices if BOTH sides appear in the KNOWLEDGE BASE. If one side is missing, say which side is not covered and use the fallback for it.\n10. Follow-ups: Use the conversation history to resolve follow-up questions (\"and what about recovery time?\", \"what about the in-patient one?\"). The answer must still come only from the KNOWLEDGE BASE.\n11. Medical disclaimer: When the answer concerns treatments, therapies, eligibility or outcomes, add one short line: \"Note: This is general information from PlacidWay pages, not medical advice. Please consult a licensed doctor.\" Do not add it to pure price, logistics or out-of-scope replies, and do not repeat it in every message of the same conversation.\n12. Language: Reply in the same language the user writes in (e.g. Spanish, Arabic), translating facts from the pages faithfully. Keep URLs and prices unchanged.\n13. Lead capture: If the user wants a quote or to book, offer the free quote form (https://www.placidway.com/rfi/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center) and offer to note their name and email.\n14. Style: Be concise and factual. Use short bullet points for package inclusions.\n\nKNOWLEDGE BASE ({{ $json.page_count }} pages loaded):\n{{ $json.knowledge_base }}",
+          "maxIterations": 3,
+          "enableStreaming": true
+        }
+      },
+      "id": "43a320e5-d970-4d68-aeac-a51c055ff103",
+      "name": "ITC Knowledge Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        672,
+        528
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini",
+          "cachedResultName": "gpt-4o-mini"
+        },
+        "responsesApiEnabled": false,
+        "options": {
+          "maxTokens": 800,
+          "temperature": 0
+        }
+      },
+      "id": "75d0edf8-c78a-4f31-b410-dd4d6a81d00e",
+      "name": "OpenAI gpt-4o-mini",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        688,
+        752
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": null,
+          "name": "Gateway credits",
+          "__aiGatewayManaged": true
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $('When chat message received').item.json.sessionId }}",
+        "contextWindowLength": 10
+      },
+      "id": "d93f7320-ef91-4432-a96a-84c42bd03bae",
+      "name": "Window Buffer Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        816,
+        752
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "sid",
+              "name": "session_id",
+              "type": "string",
+              "value": "={{ $('When chat message received').item.json.sessionId }}"
+            },
+            {
+              "id": "q",
+              "name": "question",
+              "type": "string",
+              "value": "={{ $('When chat message received').item.json.chatInput }}"
+            },
+            {
+              "id": "a",
+              "name": "answer",
+              "type": "string",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "id": "ok",
+              "name": "answered",
+              "type": "boolean",
+              "value": "={{ !String($json.output || \"\").includes(\"I don't have this information\") }}"
+            },
+            {
+              "id": "ts",
+              "name": "logged_at",
+              "type": "string",
+              "value": "={{ $now.toISO() }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "debb3fbf-e031-4d76-8161-789e4d625d58",
+      "name": "LOG_CONVERSATION",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        1024,
+        528
+      ]
+    },
+    {
+      "parameters": {
+        "dataTableId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "daFVDxH8vUwZduPL",
+          "cachedResultName": "itc_chat_log"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "session_id": "={{ $json.session_id }}",
+            "question": "={{ $json.question }}",
+            "answer": "={{ $json.answer }}",
+            "answered": "={{ $json.answered }}",
+            "logged_at": "={{ $json.logged_at }}"
+          },
+          "schema": [
+            {
+              "id": "session_id",
+              "displayName": "session_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "question",
+              "displayName": "question",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "answer",
+              "displayName": "answer",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "answered",
+              "displayName": "answered",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "boolean",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "logged_at",
+              "displayName": "logged_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2684955a-f25b-46b5-8e24-db52732ca946",
+      "name": "Save Conversation Log",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        1248,
+        528
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Refresh logic\n**Knowledge base = the 7 PlacidWay URLs from the brief only.**\n\n1. **Weekly Refresh** (Mon 03:00) or **Refresh Now** (manual) runs the 7 HTTP Request nodes one after another (sequential = about 1 request/sec, clear User-Agent, robots.txt allows these paths).\n2. **Extract Clean Page Text** keeps only the page's main content, removes scripts/menus and caps each page at 20k chars.\n3. **Save Knowledge Base** upserts one row per page (key = source_key) into the itc_knowledge_base Data Table, so pages are replaced, never duplicated. A failed page is stored as \"could not be fetched\" and the bot falls back honestly.\n4. Every chat message loads the latest rows, merges them into the knowledge_base variable and gives it to the agent - no restart needed after a refresh.\n\nRun **Refresh Now** once before the first chat. Unanswered questions are logged with answered = false in itc_chat_log to find content gaps.",
+        "height": 520,
+        "width": 520
+      },
+      "id": "fe054936-1c00-4032-9859-18b03cfa206a",
+      "name": "Refresh Logic Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        592,
+        368
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Weekly Refresh": {
+      "main": [
+        [
+          {
+            "node": "Fetch Clinic Profile",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Clinic Profile": {
+      "main": [
+        [
+          {
+            "node": "Fetch Adenocarcinoma Package",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Refresh Now": {
+      "main": [
+        [
+          {
+            "node": "Fetch Clinic Profile",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Adenocarcinoma Package": {
+      "main": [
+        [
+          {
+            "node": "Fetch Adrenal Package",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Adrenal Package": {
+      "main": [
+        [
+          {
+            "node": "Fetch Anal Package",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Anal Package": {
+      "main": [
+        [
+          {
+            "node": "Fetch Clinic Videos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Clinic Videos": {
+      "main": [
+        [
+          {
+            "node": "Fetch Price List",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Price List": {
+      "main": [
+        [
+          {
+            "node": "Fetch Price Comparison 2026",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Price Comparison 2026": {
+      "main": [
+        [
+          {
+            "node": "Extract Clean Page Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Clean Page Text": {
+      "main": [
+        [
+          {
+            "node": "Save Knowledge Base",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Load Knowledge Base",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Load Knowledge Base": {
+      "main": [
+        [
+          {
+            "node": "Build Knowledge Base Variable",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Knowledge Base Variable": {
+      "main": [
+        [
+          {
+            "node": "ITC Knowledge Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ITC Knowledge Agent": {
+      "main": [
+        [
+          {
+            "node": "LOG_CONVERSATION",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI gpt-4o-mini": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "ITC Knowledge Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "ITC Knowledge Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LOG_CONVERSATION": {
+      "main": [
+        [
+          {
+            "node": "Save Conversation Log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "23bf6c0b-19ef-4f4f-8c52-691ee08ee354",
+  "meta": {
+    "instanceId": "ee8aa485cf32206130ea916a8d421d626ee63b67fb172d95bfb90fc0278b0161"
+  },
+  "nodeGroups": [
+    {
+      "id": "0864d317-e61a-4a0c-9ce3-ea9fc0ab3b0f",
+      "name": "Scrape source pages",
+      "nodeIds": [
+        "9fe785e7-b4f6-40a1-907c-2d68517aca6c",
+        "055edb4b-f779-45a5-a721-ccbaa414f7aa",
+        "719eb694-5dee-4e91-a918-51c42ca8b0d6",
+        "692d35ea-45de-4acc-b483-fe3d04755bfc",
+        "c5b3e940-e92c-4b5f-8258-686a5f14fdad",
+        "562c55f2-bb33-4593-a10b-3c698f9bf3b3",
+        "e674adab-2e78-469d-8da2-f0f966b2ffa3"
+      ],
+      "description": "Downloads the 7 approved PlacidWay pages one by one, about one request per second, with a named crawler"
+    },
+    {
+      "id": "a8a60d69-607c-4c7f-9ddf-6e9af85f4bad",
+      "name": "Store knowledge base",
+      "nodeIds": [
+        "3d0d4686-0793-4df7-b94f-f3a0964d906c",
+        "1f10574e-234a-4cc0-b80f-c148f964e253"
+      ],
+      "description": "Strips page HTML down to readable text and replaces each page row in the knowledge table"
+    },
+    {
+      "id": "39056526-4874-4143-bdac-9f56098ab5f4",
+      "name": "Answer visitor questions",
+      "nodeIds": [
+        "d0ffb677-3b10-4679-bc65-735bb0e9887f",
+        "067375cb-7cbf-4d51-9f24-485884654fc6",
+        "43a320e5-d970-4d68-aeac-a51c055ff103",
+        "75d0edf8-c78a-4f31-b410-dd4d6a81d00e",
+        "d93f7320-ef91-4432-a96a-84c42bd03bae",
+        "debb3fbf-e031-4d76-8161-789e4d625d58",
+        "2684955a-f25b-46b5-8e24-db52732ca946"
+      ],
+      "description": "Each chat message gets a cited, page-only answer with memory, then the Q&A is logged for gap analysis"
+    }
+  ],
+  "id": "Osqgr9XGgZSh7iu1",
+  "tags": []
+}
